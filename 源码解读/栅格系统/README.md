@@ -23,3 +23,6 @@
   }
 }
 ```
+* 通过媒体查询min-width匹配类前缀（.col-lg-$），格数通过百分比控制
+```css
+@media (min-width: 1200px) {
