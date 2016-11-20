@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <style type="text/css">
+  p{
+    text-indent: 20px;
+  }
+  </style>
+  <link rel="stylesheet" type="text/css" href="../../bootstrap-3.3.0/dist/css/bootstrap.css">
+  <title>组件</title>
+</head>
+<body>
+  <!-- <nav class="container"> -->
+  <div class="container">
+    <button type="button" class="btn btn-primary" type="button" id="mybtn">
+      Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-md">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h4 class="modal-title">Modal title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim reiciendis laborum incidunt dolores commodi nobis dolorem corporis veniam eveniet natus cum porro, nostrum atque pariatur, accusantium consequuntur expedita sed! Atque, eum blanditiis, veniam iure, facilis quae ex voluptatem debitis fuga cumque a consectetur doloremque tenetur maxime velit inventore. Incidunt recusandae nesciunt, fugiat veritatis magnam vitae asperiores. Deserunt magni, impedit sunt asperiores facere repellat ut nobis ducimus aperiam labore libero vero doloremque a iusto sequi. Ratione reiciendis fuga alias voluptatum veniam quibusdam explicabo ut, minus libero pariatur. Vero voluptates consequatur suscipit, rem aliquid repellat nostrum, fuga excepturi minus nobis dolores. Sapiente!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="../../bootstrap-3.3.0/dist/js/bootstrap.js"></script>
+<script>
+$(document).ready(function(){
+   $("#myModal").on('show.bs.modal',function(e){console.log(1);})
+   .on('shown.bs.modal',function(e){console.log(2);})
+   .on('hide.bs.modal',function(e){console.log(3);})
+   .on('hidden.bs.modal',function(e){console.log(4);});
+});
+$("#mybtn").click(function(){
+  $("#myModal").modal('toggle');
+})
+</script>
+<!-- <script type="text/javascript" src="../../bootstrap-3.3.0/js/collapse.js"></script> -->
+</html>
