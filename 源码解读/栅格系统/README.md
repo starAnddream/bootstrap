@@ -89,4 +89,4 @@ clear:both
 clear:left;
 }
 ```
-<p>我们通过js查询屏幕尺寸，如：min-width:1260px,则每隔一个添加.clear</p>
+<p>我们通过js查询屏幕尺寸，如：min-width:1200px,则每隔一个添加.clear</p>
