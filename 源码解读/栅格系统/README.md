@@ -34,4 +34,32 @@
   }
  }
  ```
-* 需要注意的是bootstrap对于.col-xs-$的处理有点特殊，并没有包含在媒体查询中，所以当使用.col-xs-$时适用于所有情况。 
+* 需要注意的是bootstrap对于.col-xs-$的处理有点特殊，并没有包含在媒体查询中，所以当只声明.col-xs-$时适用于所有min-width的屏幕
+<p>如果你不能理解我们看如下代码</p>
+```html
+<div class="col-lg-4"></div>
+```
+```css
+.col-xs-4{
+position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 33.33333333%;
+  float:left
+}
+@media (min-width:1200px){
+.container {
+    width: 1170px;
+  }
+......
+.col-lg-4{
+ position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 33.33333333%;
+  float:left
+}
+}
+```
