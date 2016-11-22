@@ -64,4 +64,11 @@ position: relative;
 }
 ```
 <p>观察上面代码你会发现col-xs-6不在媒体查询里面，所以class中不包含.col-lg-4时，即便min-width大于768，也会按照col-xs-6布局</p>
-* bootstrap
+* bootstrap中栅格布局是让列浮动，bootstrap中也提供了清除浮动的方法，在父元素中添加.clearfix,但我遇到了下面的问题无法解决
+```html
+<div class="col-xs-4 col-lg-6"></div>
+......
+......
+<div class="col-xs-4 col-lg-6"></div>
+````
+
