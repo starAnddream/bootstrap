@@ -37,15 +37,15 @@
 * 需要注意的是bootstrap对于.col-xs-$的处理有点特殊，并没有包含在媒体查询中，所以当只声明.col-xs-$时适用于所有min-width的屏幕
 <p>如果你不能理解我们看如下代码</p>
 ```html
-<div class="col-lg-4"></div>
+<div class="col-lg-4 col-xs-6"></div>
 ```
 ```css
-.col-xs-4{
+.col-xs-6{
 position: relative;
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
-  width: 33.33333333%;
+  width: 50%;
   float:left
 }
 @media (min-width:1200px){
@@ -63,3 +63,4 @@ position: relative;
 }
 }
 ```
+<p>观察上面代码你会发现col-xs-6不在媒体查询里面，所以class中不包含.col-lg-4时，即便min-width大于768，也会按照col-xs-6布局</p>
