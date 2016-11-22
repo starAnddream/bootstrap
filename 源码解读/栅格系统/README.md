@@ -64,3 +64,4 @@ position: relative;
 }
 ```
 <p>观察上面代码你会发现col-xs-6不在媒体查询里面，所以class中不包含.col-lg-4时，即便min-width大于768，也会按照col-xs-6布局</p>
+* bootstrap
