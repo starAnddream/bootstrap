@@ -71,4 +71,5 @@ position: relative;
 ......
 <div class="col-xs-4 col-lg-6"></div>
 ````
-
+<p>会出现如下问题</p>
+![bug](https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/float.png)
