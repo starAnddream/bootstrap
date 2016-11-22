@@ -74,5 +74,19 @@ position: relative;
 <p>会出现如下问题</p>
 ![bug](https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/float.png)
 <p>第一个是我们想要的，但有时候我们会得到第二个，主要原因是第一个div高度过高导致,浮动会使元素尽可能的往高处浮动</p>
-
-
+* 方法一：放个div在换行处
+```html
+<div class="clear"></div>
+.clear{
+clear:both
+}
+```
+<p>这样一是不知道什么时候换行，二是改变了文档的Dom结构</p>
+* 方法二：给换行的元素清除左边的浮动
+```html
+<div class="clear"></div>
+.clear{
+clear:left;
+}
+```
+<p>我们通过js查询屏幕尺寸，如：min-width:1260px,则每隔一个添加.clear</p>
