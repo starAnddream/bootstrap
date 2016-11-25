@@ -173,9 +173,9 @@ input[type="radio"] {
 <p>如果需要radio和checkbox在同一行，可以使用.radio-inline .checkbox-inline</p>
 <b>对于radio,name值必须一样，否则可以多选</b>
 * 表单属性
-#####表单禁用
+##### 表单禁用
 <p>disabled="disabled"</p>
-#####表单是否选中
+##### 表单是否选中
 checked="true/false"
 * 验证样式
 <pre>
@@ -255,7 +255,7 @@ checked="true/false"
 .btn-xs
 </pre>
 <p>至于如何实现，应该很简单，这里就不赘述了</p>
-#### 块状按钮  .btn-block
+<h5> 块状按钮  .btn-block</h5>
 <p>百分之百填充父元素</p>
 ```css
 .btn-block {
