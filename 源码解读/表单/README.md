@@ -310,7 +310,8 @@ checked="true/false"
   border-radius: 50%;
 }
 ```
-* 输入框租
+* 输入框租<br/>
+
 ![menu](https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/AIC%40%7D%24AW(%7E6EXOU4V%5D%5DC5XR.png)
 ```html
 <div class="row">
