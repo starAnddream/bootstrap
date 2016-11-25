@@ -81,7 +81,7 @@
 	}
 ```
 * 输入框
-#### 下拉框 .form-control
+##### 下拉框 .form-control
 ```html
 <select class="form-control">    //单选框
 	<option></option>
@@ -237,8 +237,42 @@ checked="true/false"
 		vertical-align:middle;
 	}
 ```
-
-
+* 按钮 .btn
+<p>按钮风格</p>
+<pre>
+.btn-default
+.btn-success
+.btn-primary
+.btn-info
+.btn-danger
+.btn-link
+.btn-warning
+</pre>
+<p>按钮大小</p>
+<pre>
+.btn-lg
+.btn-sm
+.btn-xs
+</pre>
+<p>至于如何实现，应该很简单，这里就不赘述了</p>
+#### 块状按钮  .btn-block
+<p>百分之百填充父元素</p>
+```css
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.btn-block + .btn-block {
+  margin-top: 5px;
+}
+```
+<h5>激活和禁用</h5>
+<pre>
+.disabled  | disabled="disabled"
+.active
+.focus
+.hover
+</pre>
 
 
 
