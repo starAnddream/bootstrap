@@ -273,27 +273,71 @@ checked="true/false"
 .focus
 .hover
 </pre>
+* 图片
+<h5>图片风格</h5>
+<p>.img-responsive<span>响应式图片</span></p>
+<p>.img-rounded<span>圆角图片</span></p>
+<p>.img-circle<span>圆形图片</span></p>
+<p>.img-thumbnail<span>缩略图图片</span></p>
+<b>直接使用到<img>上，并未对图片大小做处理，如果涉及图片大小的问题，则可以控制容器的大小</b>
+```css
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.img-rounded {
+  border-radius: 6px;
+}
+.img-thumbnail {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.img-circle {
+  border-radius: 50%;
+}
+```
+* 输入框租
+![下拉菜单组合]（https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/AIC%40%7D%24AW(%7E6EXOU4V%5D%5DC5XR.png）
+```html
+<div class="row">
+		<div class="input-group col-lg-3">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+			<div class="input-group-btn">
+				<!-- <div class="dropdown"> -->
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					Action <span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu dropdown-menu-right ">
+					<li class="dropdown-header">标题一</li>
+					<li class="disabled"><a href="javascript:void(0)">宝贝</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">标题二</li>
+					<li class="active"><a href="">店铺</a></li>
+				</ul>
+				<!-- </div> -->
+			</div>
+			<input type="text" placeholder="请输入用户名" class="form-control">
+			<span class="input-group-btn">
+				<button class="btn btn-primary">搜索</button>
+			</span>
+			<!-- <span class="input-group-addon glyphicon glyphicon glyphicon-ok sr-only" aria-hidden="true"></span> -->
+		</div>
+		</div>
+```
 
 
 
