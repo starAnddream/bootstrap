@@ -26,7 +26,7 @@
   border-radius: 3px;
 }
 ```
-*** 内联表单  .form-inline
+#### 内联表单  .form-inline
 <b>.form-inline是加在form-group的父元素上的</b>
 <p>容器<div class="form-inline">中的所有元素都显示在同一行，支持响应式，当屏幕小于768px时，label与input会换行</p>
 ```html
