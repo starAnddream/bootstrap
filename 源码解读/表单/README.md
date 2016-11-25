@@ -56,3 +56,46 @@
     vertical-align: middle;
   }
   ```
+* 水平表单方法一：.form-horizontal配合col-type-$栅格
+<p>label与input同行</p>
+<b>类名也是加在form-group的父元素上</b>
+```css
+.form-horizontal .form-group {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    padding-top: 7px;
+    margin-bottom: 0;
+    text-align: right;
+  }
+}
+```
+* 水平表单方法二：自定义样式
+```css
+.horizontal .form-control{
+		display:inline-block;
+		width:auto;
+		vertical-align:middle;
+	}
+```
+* 输入框
+#### 下拉框 .form-control
+```html
+<select class="form-control">    //单选框
+	<option></option>
+	...
+	...
+	<option></option>
+</select>
+<select class="form-control" multiple="multiple">    //多选框
+	<option></option>
+	...
+	...
+	<option></option>
+</select>
+
+
+
+
