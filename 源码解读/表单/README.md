@@ -95,6 +95,191 @@
 	...
 	<option></option>
 </select>
+```
+```css
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+       -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+          transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+}
+```
+* 文本域 .form-control rows="$"
+```html
+<textarea class="form-control" rows="3"></textarea>
+```
+* 多选框和单选框 
+```html
+<div class="radio">
+		<label class="checkbox">
+			<input type="radio" name=""><label>男</label>
+			<input type="radio" name=""><label>女</label>
+		</label>
+		</div>
+```
+```css
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+.radio + .radio,
+.checkbox + .checkbox {
+  margin-top: -5px;
+}
+.radio-inline,
+.checkbox-inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+```
+<p>如果需要radio和checkbox在同一行，可以使用.radio-inline .checkbox-inline</p>
+<b>对于radio,name值必须一样，否则可以多选</b>
+* 表单属性
+#####表单禁用
+<p>disabled="disabled"</p>
+#####表单是否选中
+checked="true/false"
+* 验证样式
+<pre>
+.has-warning 黄
+.has-error   红
+.has-success 绿
+</pre>
+<b>在父元素上添加类名</b>
+```css
+.has-error .help-block,
+.has-error .control-label,
+.has-error .radio,
+.has-error .checkbox,
+.has-error .radio-inline,
+.has-error .checkbox-inline,
+.has-error.radio label,
+.has-error.checkbox label,
+.has-error.radio-inline label,
+.has-error.checkbox-inline label {
+  color: #a94442;
+}
+.has-error .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+}
+.has-error .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
+}
+```
+* 图标提示 .has-feedback
+<p>在input后面添加一个span</p>
+<b>类名添加的位置与has-warning一样</b>
+```css
+.has-feedback {
+  position: relative;
+}
+.has-feedback .form-control {
+  padding-right: 42.5px;
+}
+```
+```html
+<div class="horizontal">
+			
+			<div class="form-group has-warning form-group-lg">
+				<label for="userName" class="control-label">用户名</label>
+				<input type="text" class="form-control" focus name="userName" id="userName" placeholder="请输入用户名"/>
+				<span class="glyphicon glyphicon glyphicon-ok sr-only" aria-hidden="true"></span>
+			</div>
+			</div>
+```
+<p>自定义css</p>
+```css
+.horizontal .form-control{
+		display:inline-block;
+		width:auto;
+		vertical-align:middle;
+	}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
