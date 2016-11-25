@@ -312,7 +312,7 @@ checked="true/false"
 ```
 * 输入框租<br/>
 
-![menu](https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/float.png) 
+![menu](https://github.com/starAnddream/bootstrap/blob/master/%E6%BA%90%E7%A0%81%E8%A7%A3%E8%AF%BB/images/nav-menu.png) 
 ```html
 <div class="row">
 		<div class="input-group col-lg-3">
